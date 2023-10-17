@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 
-void task1()
+/*void task1()
 {
 	int a;
 	int tab[50];//0,1,2
@@ -32,6 +32,8 @@ void task1()
 /*
 Wyświetl największą liczbę ze zbioru
 */
+
+/*
 void task2()
 {
 	const int size = 10;
@@ -83,9 +85,10 @@ void task2()
 			count++;
 	std::cout << "Ilość liczb większa od średniej " << count << "\n";
 }
+*/
 
 /*Zaimplementuj algorytm sortowania przez wybór*/
-void task3()
+/*void task3()
 {
 	const int size = 10;
 
@@ -125,9 +128,9 @@ void task3()
 	std::cout << "\n";
 
 }
-
+*/
 /*Zaimplementuj algorytm sortowania bąbelkowego*/
-void task4()
+/*void task4()
 {
 	const int size = 10;
 
@@ -167,8 +170,63 @@ void task4()
 	std::cout << "\n";
 
 }
+*/
+//napisz program ktora dla tablicy z liczbami pseudolosowymi policzy srednai artmetyczna tych liczb
+void task5()
+{
+	const int size = 10;
+
+	int tabOfNumbers[size];
+
+	srand(time(NULL));
+	for (int i = 0; i < size; i++)
+	{
+		tabOfNumbers[i] = rand() % 10 + 1;
+	}
+
+	std::cout << "Liczby w tablicy  \n";
+	for (int i = 0; i < size; i++)
+	{
+		std::cout << tabOfNumbers[i] << ", ";
+	}
+	std::cout << "\n";
+
+	int sum = 0;
+	for (int i = 0; i < size; i++) {
+		sum += tabOfNumbers[i];
+	}
+
+	std::cout << "suma liczb w tablicy" << sum << "/n";
+	int average = sum / size;
+
+	std::cout << "srednia liczb w tablicy" << average;
+    }
+    
+/*
+* Napisz funkcję, która dla kolekcji danych liczbowych policzy ile jest liczb większych od średniej arytmetycznej.
+* Napisz funkcje, która dla kolekcji danych liczbowych przeniesie te liczby do innej kolekcji w odwrotnej kolejności.
+* Napisz funkcje, która dla kolekcji danych liczbowych obliczy częstotliwość występowania danej liczby.
+* Napisz funkcję, która dla kolekcji danych liczbowych znajdzie najdłuższy rosnący podciąg.
+* Napisz funkcję, która dla kolekcji danych liczbowych przeniesie te liczby do osobnych kolekcji liczb parzystych i nieparzystych.
+*/
+
+//Napisz funkcję, która dla kolekcji danych liczbowych policzy ile jest liczb większych od średniej arytmetycznej.
+void task6()
+{
+
+
+
+	
+
+
+}
+
+
+
 
 int main()
 {
-	task4();
+	//task4();
+	//task5();
+	task6();
 }
